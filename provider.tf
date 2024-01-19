@@ -8,9 +8,7 @@ terraform {
     region         = "us-east-1"
     dynamodb_table = "terraform_state"
     encrypt        = true
-    session_name   = "terraform"
     profile        = "terraform"
-    role_arn       = "arn:aws:iam::635066407893:role/tf-master"
   }
   required_providers {
     aws = {
